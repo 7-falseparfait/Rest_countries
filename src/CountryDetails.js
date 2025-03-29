@@ -87,7 +87,7 @@ function CountryDetails({ countries }) {
                   <span className="label">Capital:</span> {capital}
                 </p>
               </div>
-              <div className="mt-1 pt-1">
+              <div className="mt-1 pt-2">
                 <p>
                   <span className="label">Top Level Domain:</span>{" "}
                   {tld?.[0] || "N/A"}
