@@ -1,0 +1,20 @@
+// .header {
+//   border-bottom: 1px solid #eeeeee; // Light grey bottom border
+//   box-shadow: 0px 4px 6px #eeeeee; // Soft shadow effect at the bottom;
+// }
+
+.search-filter-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  @media (min-width: 820px) {
+    margin-top: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .search-bar {
+      width: 55%;
+      margin-top: 0;
+    }
+  }
+}

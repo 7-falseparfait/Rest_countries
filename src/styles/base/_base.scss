@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --elements-color: hsl(0, 0%, 100%);
+  --bg-color: hsl(0, 0%, 98%);
+  --text-color: hsl(200, 15%, 8%);
+  --border-color: #eeeeee;
+  --shadow-color: rgba(238, 238, 238, 0.9);
+}
+
+[data-theme="dark"] {
+  --elements-color: hsl(209, 23%, 22%);
+  --bg-color: hsl(207, 26%, 17%);
+  --text-color: hsl(0, 0%, 100%);
+  --shadow-color: rgba(0, 0, 0, 0.5);
+  --border-color: hsl(209, 23%, 22%);
+}
+.dark-mode {
+  --border-color: hsl(209, 23%, 22%);
+  --shadow-color: rgba(0, 0, 0, 0.5);
+}
+.with-shadow {
+  border: 1px solid var(--border-color);
+  box-shadow: 0px 2px 10px var(--shadow-color);
+}
+.with-shadow-three {
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0px 2px 10px var(--shadow-color);
+}
+.with-shadow-bottom {
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0px 4px 6px var(--shadow-color);
+}
+button,
+.card,
+.search-bar,
+.filter {
+  background-color: var(--elements-color);
+  color: var(--text-color);
+}
+
+body {
+  min-height: 100vh;
+  font-family: $font-primary;
+  max-width: 1440px;
+  margin: auto;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+.iconify {
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  width: fit-content;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.5s ease, border-width 0.3s ease;
+}
+
+p {
+  line-height: 28px;
+}
+/* Remove default styles from <li> */
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+input {
+  all: unset;
+  /* Resets all styles to default */
+  box-sizing: border-box;
+  /* To ensure width/height calculations include padding and borders */
+  font: inherit; /* Ensures font styles are inherited from the parent */
+}
+button {
+  all: unset;
+  /* Resets all styles to default */
+  box-sizing: border-box;
+  font: inherit;
+  cursor: pointer;
+  /* Ensures the button retains its clickability */
+}
+footer {
+  margin-top: 5rem;
+}
+p {
+  font-size: 16px;
+}

@@ -1,0 +1,34 @@
+// @for $fw from 3 through 8 {
+//   .font-weight-#{$fw *100} {
+//     font-weight: $fw * 100;
+//   }
+// }
+
+//   @for $fs from 10 through 50 {
+//     .font-#{$fs} {
+//       font-size: #{$fs}px;
+//     }
+//   }
+//   @for $fs from 65 through 75 {
+//     .font-#{$fs} {
+//       font-size: #{$fs}px;
+//     }
+//   }
+
+@for $fw from 3 through 8 {
+  .font-weight-#{$fw * 100} {
+    font-weight: #{$fw * 100};
+  }
+}
+
+@for $fs from 10 through 50 {
+  .font-#{$fs} {
+    font-size: #{$fs}px;
+  }
+}
+
+@for $fs from 65 through 75 {
+  .font-#{$fs} {
+    font-size: #{$fs}px;
+  }
+}

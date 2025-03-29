@@ -1,0 +1,61 @@
+.back-btn {
+  padding: 0.4rem 1rem;
+}
+
+.label {
+  font-weight: bold;
+}
+.borders {
+  padding: 0.4rem 1rem;
+}
+.details {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 820px) {
+    .detail-country {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .cust {
+      height: 18rem;
+      display: flex;
+      flex-direction: column;
+      width: 47%;
+      justify-content: space-between;
+      place-self: center;
+    }
+    .cust-1 {
+      display: flex;
+      justify-content: space-between;
+    }
+    .country-details-img img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+    .country-details-img {
+      width: 45%;
+    }
+    .pt-1,
+    .pt-2 {
+      width: 47%;
+    }
+    .pt-1 {
+      padding-left: 2rem;
+    }
+    .pt-2 {
+      margin-top: 3rem;
+    }
+    .border-container {
+      padding-left: 2rem;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+  }
+}

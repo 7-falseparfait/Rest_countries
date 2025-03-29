@@ -1,0 +1,153 @@
+.flex {
+  display: flex;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.centered {
+  justify-content: center;
+  align-items: center;
+}
+.space-around {
+  justify-content: space-around;
+}
+.space-btw {
+  justify-content: space-between;
+}
+.flex-end {
+  justify-content: flex-end;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.allign-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.grid {
+  display: grid;
+}
+.text-center {
+  text-align: center;
+}
+.col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@for $cat from 1 through 16 {
+  .mt-#{$cat} {
+    margin-top: $cat * 1rem;
+  }
+  .mb-#{$cat} {
+    margin-bottom: $cat * 1rem;
+  }
+  .mr-#{$cat} {
+    margin-right: $cat * 1rem;
+  }
+  .ml-#{$cat} {
+    margin-left: $cat * 1rem;
+  }
+  .pt-#{$cat} {
+    padding-top: $cat * 1rem;
+  }
+  .pb-#{$cat} {
+    padding-bottom: $cat * 1rem;
+  }
+  .gap-#{$cat} {
+    gap: $cat * 1rem;
+  }
+  .my-#{$cat} {
+    margin-top: $cat * 1rem;
+    margin-bottom: $cat * 1rem;
+  }
+  .mx-#{$cat} {
+    margin-left: $cat * 1rem;
+    margin-right: $cat * 1rem;
+  }
+  .py-#{$cat} {
+    padding-top: $cat * 1rem;
+    padding-bottom: $cat * 1rem;
+  }
+  .px-#{$cat} {
+    padding-right: $cat * 1rem;
+    padding-left: $cat * 1rem;
+  }
+  .pd-#{$cat} {
+    padding: $cat * 1rem;
+  }
+}
+.pb-03 {
+  padding-bottom: 0.3rem;
+}
+.gap-05 {
+  gap: 0.5rem;
+}
+.gap-03 {
+  gap: 0.3rem;
+}
+.pd-05 {
+  padding: 0.5rem;
+}
+.pd-03 {
+  padding: 0.3rem;
+}
+.flex-grow1 {
+  flex-grow: 1;
+}
+.py-07 {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+.py-03 {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+.py-05 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.px-016 {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+}
+.pos-fixed {
+  position: fixed;
+}
+.pos-abs {
+  position: absolute;
+}
+.pos-rel {
+  position: relative;
+}
+.flex-end {
+  justify-content: flex-end;
+}
+.pointer:hover {
+  cursor: pointer;
+}
+.white {
+  color: var(--sec-col);
+}
+.col-2-40 {
+  grid-template-columns: 32% 67%;
+}
+.col-2-60 {
+  grid-template-columns: 35% 80%;
+}
+.col-2-25 {
+  grid-template-columns: 25% 74%;
+}
+
+.display-none {
+  display: none !important;
+}
+
+.test {
+  border: 2px solid red;
+}
+.name {
+  width: 18rem;
+}
